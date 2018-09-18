@@ -14,6 +14,7 @@ pipeline {
     stage('Deploy') {
       steps {
         fileExists 'hello'
+        archiveArtifacts 'hello'
       }
     }
   }
